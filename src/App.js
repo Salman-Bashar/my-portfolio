@@ -3,7 +3,6 @@ import Home from "./components/Home"
 import About from "./components/About"
 import Project from "./components/Project"
 import Post from "./components/Post"
-import SinglePost from "./components/SinglePost"
 import NavBar from "./components/NavBar"
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
         <Route component={About} path='/about' />
         <Route component={Project} path='/project' />
         <Route component={Post} path='/post' />
-        <Route component={SinglePost} path='/post/:slug' />
       </Switch>
     </BrowserRouter>
   )
