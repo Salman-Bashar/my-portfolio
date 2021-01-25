@@ -10,6 +10,7 @@ export default function Project() {
         `*[_type == "project"]{
             title,
             link,
+            sourceCode,
             description
         }`
       )
@@ -42,13 +43,13 @@ export default function Project() {
                     {project.description}
                   </p>
                   <a
-                    href={project.link}
+                    href={project.sourceCode}
                     alt={project.title}
                     target='_blank'
                     rel='noopener noreferrer'
                     className='text-red-500 font-bold hover:text-red-400 text-xl hover:underlined'
                   >
-                    View The Project{" "}
+                    View Project Source Code{" "}
                     <span role='img' aria-label='right pointer'>
                       👉
                     </span>
