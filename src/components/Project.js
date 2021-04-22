@@ -43,7 +43,7 @@ export default function Project() {
                     {project.description}
                   </p>
                   <a
-                    href={project.sourceCode}
+                    href={project.link}
                     alt={project.title}
                     target='_blank'
                     rel='noopener noreferrer'
